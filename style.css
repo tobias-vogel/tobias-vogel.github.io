@@ -1,0 +1,52 @@
+body {
+  background-color: pink;
+  font-family: 'Lucida Sans Unicode', sans-serif;
+}
+
+#container {
+  min-height: 10em;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#vcard {
+  background-color: white;
+  padding: 10px;
+  height: 200px;
+  width: 400px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+/*
+  margin-left: auto;
+  margin-right: auto;
+*/
+  margin-top: -100px;
+}
+
+#tags {
+  list-style: none;
+  padding-left: 0px;
+}
+
+#tags li {
+  display: inline;
+}
+
+#tags li:after {
+  content: " ·";
+}
+
+#tags li:last-child:after {
+  content: ""
+}
+
+#portrait {
+  width: 100px;
+  float: right;
+}
+
+img.linkbild {
+  width: 32px;
+}
