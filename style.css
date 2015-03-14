@@ -5,12 +5,6 @@ body {
   font-size: 14pt;
 }
 
-/*#container {
-  min-height: 10em;
-  display: table-cell;
-  vertical-align: middle;
-}*/
-
 a {
   text-decoration: none;
   color: black;
@@ -91,7 +85,7 @@ img.linkbild {
 }
 
 #linkliste li {
-  margin-right: 10px;
+  margin-right: 29px;
 }
 
 .hervorhebbar#wikipedia img:hover {
