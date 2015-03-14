@@ -1,32 +1,45 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Tobias Vogel</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script language="javascript" type="text/javascript" src="script.js"></script>
   </head>
-  <body>
-<!--    <div id="container">-->
+  <body onload="addEventListeners()">
+  <!--    <div id="container">-->
     <div id="vcard">
-      <img id="portrait" src="http://www.hd-gbpics.de/gbbilder/lustige-kinder/lustige-kinder-10004.jpg">
-      <div id="name">Tobias Vogel</div>
-      <div id="beruf">IT Systems Engineer</div>
-      <ul id="tags">
+      <img id="portrait" src="assets/Portrait.jpg" alt="Portraitfoto von mir">
+      <p class="name">Tobias Vogel</p>
+      <p class="beruf">IT Systems Engineer</p>
+      <ul class="cooleliste" id="tagliste">
         <li>Data Quality</li>
-        <li>Entwicklung</li>
-        <li>Konzeption</li>
+        <li>Softwareentwicklung</li>
+        <li>Systemkonzeption</li>
       </ul>
 
-      <ul>
-        <li>(W)<img class="linkbild" src="assets/wikipedia.png" alt="Wikipedia-Logo">
-        <li>(DBLP)<img class="linkbild" src="assets/wikipedia.png" alt="Wikipedia-Logo">
-        <li>(GITHUB)<img class="linkbild" src="assets/wikipedia.png" alt="Wikipedia-Logo">
-        <li>(XING)<img class="linkbild" src="assets/wikipedia.png" alt="Wikipedia-Logo">
+      <div>✉ <a href="mailto:tobias@vogel.name">tobias@vogel.name</a></div>
+      <div>🌏 <a href="http://tobiasvogel.name">http://tobiasvogel.name<span id="unterseite"></span></a></div>
 
-      <div>
-        link (wechselt, je nach hover)
-      </div>
+      <ul class="cooleliste" id="linkliste">
+        <li class="hervorhebbar" id="wikipedia"><a href="https://de.wikipedia.org/wiki/Benutzer:Tobias.Vogel"><img class="linkbild" src="assets/wikipedia.png" alt="Wikipedia-Logo"></a></li>
+        <li class="hervorhebbar" id="publications"><a href="http://dblp.uni-trier.de/pers/hd/v/Vogel:Tobias"><img class="linkbild" src="assets/dblp.png" alt="DBLP-Logo"></a></li>
+        <li class="hervorhebbar" id="projects"><a href="https://github.com/tobias-vogel"><img class="linkbild" src="assets/github.jpg" alt="Github-Logo"></a></li>
+        <li class="hervorhebbar" id="xing"><a href="https://www.xing.com/profile/Tobias_Vogel8"><img class="linkbild" src="assets/xing.png" alt="Xing-Logo"></a></li>
+      </ul>
+    </div>
 
-</div>
-<!--    </div>-->
+<!--
+todo:
+die kreise sind initial schwarz
+
+link (wechselt, je nach hover), es steht immer http://tobiasvogel.name/ da, dann mit verschiedenen farben dahinter, je nachdem, auf welchem schnuffel man ist, die passende endung
+
+die schnuffel könnten initial schwarzweiß sein und farbig werden, wenn man hovert
+
+eine rückseite der visitenkarte einbauen mit tags drauf (tools, die ich kenne und so, z.b. eclipse, weka, ruby-diamant, bash)
+dort ein shuffle-button einbauen, der alle tags verdoppelt (von hinten nach vorne), dann umdreht in super-mario-fragezeichen-box, dann paarweise vertauscht (1000 vertauschungen oder so, alle auf einmal am besten (also schon vorher zielkoordinate überlegen und dann dorthin-verschieben), dann memory-funktion
+visitenkarte kann an ecke (ein corner-radius anders machen oder eine ecke drüberlegen) oder an ipod-bubbeln unten "gedreht" werden, dann sieht man auch, dass es mehrere seiten gibt
+-->
   </body>
 </html>
