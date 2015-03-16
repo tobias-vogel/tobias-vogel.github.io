@@ -40,6 +40,9 @@ a {
 
 p.name, p.beruf {
   font-size: 16pt;
+}
+
+p.name, p.beruf, p.email, p.homepage {
   margin: 0px;
 }
 

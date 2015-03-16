@@ -8,11 +8,11 @@ function addEventListeners() {
 
 function addURIPart() {
   var link = this.id;
-  var linkfarbe = this.style.backgroundColor;
+  //var linkfarbe = this.style.backgroundColor;
 
   var unterseite = document.getElementById("unterseite");
   unterseite.innerText = "/" + link;
-  unterseite.style.color = linkfarbe;
+  //unterseite.style.color = linkfarbe;
 
   unterseite.parentElement.href += "/" + link;
 }
@@ -23,4 +23,8 @@ function removeURIPart() {
   unterseite.innerText = "";
 
   unterseite.parentElement.href = "http://tobiasvogel.name";
+}
+
+function xxx() {
+  document.getElementById("unterseite").innerText = "jjiji";
 }
