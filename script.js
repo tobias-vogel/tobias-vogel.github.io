@@ -11,18 +11,18 @@ function addURIPart() {
   //var linkfarbe = this.style.backgroundColor;
 
   var unterseite = document.getElementById("unterseite");
-  unterseite.innerText = "/" + link;
+  unterseite.textContent = "/" + link;
   //unterseite.style.color = linkfarbe;
 
-  unterseite.parentElement.href += "/" + link;
+  unterseite.parentElement.href += link;
 }
 
 
 function removeURIPart() {
   var unterseite = document.getElementById("unterseite");
-  unterseite.innerText = "";
+  unterseite.textContent = "";
 
-  unterseite.parentElement.href = "http://tobiasvogel.name";
+  unterseite.parentElement.href = "http://tobiasvogel.name/";
 }
 
 function xxx() {

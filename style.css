@@ -46,6 +46,7 @@ p.name, p.beruf, p.email, p.homepage {
   margin: 0px;
 }
 
+
 /* Listen ohne Bullets */
 ul.cooleliste {
   list-style: none;
