@@ -34,7 +34,7 @@ a {
 }
 
 #portrait {
-  width: 125px;
+  width: 120px;
   float: right;
 }
 
@@ -75,7 +75,7 @@ ul.cooleliste li {
   margin-left: auto;
   margin-right: auto;
   width: 400px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 img.linkbild {
