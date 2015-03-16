@@ -17,14 +17,9 @@ function addURIPart() {
   unterseite.parentElement.href += link;
 }
 
-
 function removeURIPart() {
   var unterseite = document.getElementById("unterseite");
   unterseite.textContent = "";
 
   unterseite.parentElement.href = "http://tobiasvogel.name/";
-}
-
-function xxx() {
-  document.getElementById("unterseite").innerText = "jjiji";
 }
