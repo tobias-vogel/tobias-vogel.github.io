@@ -1,13 +1,23 @@
 function addEventListeners() {
   var hervorhebbares = document.getElementsByClassName("hervorhebbar");
   for (var i = 0; i < hervorhebbares.length; i++) {
-    hervorhebbares[i].addEventListener("mouseover", addURIPart);
-    hervorhebbares[i].addEventListener("mouseout", removeURIPart);
+    // Event-Listener anhängen
+    hervorhebbares[i].addEventListener("mouseover", mouseOverLinkAction);
+    hervorhebbares[i].addEventListener("mouseout", mouseOutLinkAction);
   }
 }
 
-function addURIPart() {
+function mouseOverLinkAction() {
   var link = this.id;
+
+  // Bild austauschen
+  var schwarzweissbild = document.getElementById(link + "-icon-bw");
+  schwarzweissbild.style.display = "none";
+  var farbbild = document.getElementById(link + "-icon");
+  farbbild.style.display = "inline";
+
+
+  // Adresse ergänzen
   //var linkfarbe = this.style.backgroundColor;
 
   var unterseite = document.getElementById("unterseite");
@@ -17,7 +27,17 @@ function addURIPart() {
   unterseite.parentElement.href += link;
 }
 
-function removeURIPart() {
+function mouseOutLinkAction() {
+  var link = this.id;
+
+  // Bild austauschen
+  var schwarzweissbild = document.getElementById(link + "-icon-bw");
+  schwarzweissbild.style.display = "inline";
+  var farbbild = document.getElementById(link + "-icon");
+  farbbild.style.display = "none";
+
+
+  // Adresse zurücksetzen
   var unterseite = document.getElementById("unterseite");
   unterseite.textContent = "";
 

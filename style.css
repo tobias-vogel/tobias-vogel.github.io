@@ -83,15 +83,15 @@ img.linkbild {
   border-width: 1px;
   border-style: solid;
   border-color: black;
-  border-radius: 32px;
+  border-radius: 49px;
   padding: 16px;
-  background-color: black;
 }
 
 #linkliste li {
   margin-right: 29px;
 }
 
+/*
 .hervorhebbar#wikipedia img:hover {
   background-color: #f5f5f5;
   border-color: gray;
@@ -111,3 +111,4 @@ img.linkbild {
   background-color: #d0dc00;
   border-color: darkgreen;
 }
+*/
