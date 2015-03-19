@@ -74,8 +74,21 @@ ul.cooleliste li {
 #linkliste {
   margin-left: auto;
   margin-right: auto;
-  width: 400px;
-  margin-top: 50px;
+  width: 80%;
+  margin-top: 35px;
+  text-align: justify;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+ul#linkliste:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+#linkliste li {
+  display: inline-block;
 }
 
 img.linkbild {
@@ -85,10 +98,6 @@ img.linkbild {
   border-color: black;
   border-radius: 49px;
   padding: 16px;
-}
-
-#linkliste li {
-  margin-right: 29px;
 }
 
 /*
